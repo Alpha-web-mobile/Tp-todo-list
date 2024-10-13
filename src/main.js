@@ -77,7 +77,7 @@ window.addEventListener("load", (e) => {
   console.log("Edit text", e);
   title.value = task.title;
   description.value = task.description;
-  submitted.textContent = "Save modified";
+  submitted.textContent = "Save";
   updateEdit = {
   title:taskTitle,
   description:taskDescription
