@@ -1,0 +1,70 @@
+@use'token';
+@use'responsive';
+
+
+form {
+display: flex;
+flex-direction: column;
+justify-content:space-between;
+align-items: center;
+.container-input{
+display: flex;
+flex-direction: column;
+width:100%;
+justify-content: space-around;
+align-items: center;
+gap:1em;
+input{
+height: 3rem;
+width: 20rem;
+border-radius: 2rem;
+border: none;
+outline: none;
+cursor:text;
+font-size: 1rem;
+}
+textarea{
+    height: 5rem;
+    width: 30rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding:2rem;
+    cursor:text;
+    color: token.$colorRed;
+    font-size: 2rem;
+};
+label{
+text-align: center;
+font-size: 2rem;
+color: rgb(144, 121, 166);
+margin-top:2rem;
+}
+}
+button{ 
+padding:1rem;
+font-size: 2rem;
+border-radius: 1em;
+border:none;
+width: 3em;
+margin:3rem;
+& i{
+    color:rgb(34, 255, 0);
+    width: 100%;
+    &:hover{
+    color:rgb(237, 9, 9);
+    font-size: 0.9em;
+    animation: sended;
+    animation-duration: 2s;
+    }
+    // @keyframes  sended {
+    // 0% {left:0em; right:0em;};
+    // 25% {left:1rem; right:1em;};
+    // 50% {left:1rem; right:1em;};
+    // 100% {left:1rem; right:1em;};
+        // 
+    // }
+}
+}
+}
